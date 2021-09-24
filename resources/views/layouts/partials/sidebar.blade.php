@@ -28,6 +28,12 @@
                         <p>Barang</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ route('kategori.index') }}">
+                        <i class="fas fa-angle-double-right"></i>
+                        <p>Kategori</p>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
