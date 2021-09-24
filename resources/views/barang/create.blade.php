@@ -74,10 +74,28 @@
                 <input type="text" name="deskripsi" class="form-control" placeholder="Deskripsi">
             </div>
         </div>
+        {{-- <div class="form-group row">
+            <label for="kpi_golongan" class="col-sm-3 col-form-label required">Golongan</label>
+            <div class="col-lg-9">
+                <select name="kpi_golongan" id="kpi_golongan" class="form-control border-success">
+                    <option value="">- Pilih Golongan -</option>
+                    @foreach ($golongan  as $item)
+                        <option value="{{ $item->nama_golongan }}">{{ $item->nama_golongan }}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div> --}}
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Kategori:</strong>
-                <input type="text" name="id_kategori" class="form-control" placeholder="Kategori">
+                <label for="id_kategori" class="col-sm-3 col-form-label required">Kategori</label>
+                <div class="col-lg-9">
+                <select name="id_kategori" id="id_kategori" class="form-control border-success">
+                    <option value="">- Pilih Kategori -</option>
+                    @foreach ($kategori  as $item)
+                        <option value="{{ $item->id }}">{{ $item->nama_kategori }}</option>
+                    @endforeach
+                </select>
+            </div>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

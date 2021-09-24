@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Barang;
+use App\Models\Kategori;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -10,13 +11,17 @@ class BarangController extends Controller
 {
     public function index()
     {
-    $barang =  Barang::all();
-    return view('barang.index', compact('barang'));
+    $barang =  Barang::with('kategori')->get();
+    $kategori =  Kategori::all();
+    return view('barang.index', compact('barang','kategori'));
+
+    // return response()->json($barang);
     }
 
     public function create()
     {
-        return view('barang.create');
+        $kategori =  Kategori::all();
+        return view('barang.create',compact('kategori'));
     }
   
     public function store(Request $request)
@@ -37,7 +42,8 @@ class BarangController extends Controller
   
     public function edit(Barang $barang)
     {
-        return view('barang.edit',compact('barang'));
+        $kategori =  Kategori::all();
+        return view('barang.edit',compact('barang','kategori'));
     }
   
     public function update(Request $request, Barang $barang)

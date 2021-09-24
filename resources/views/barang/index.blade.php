@@ -56,7 +56,7 @@
             <td>{{ $barangs->harga }}</td>
             <td>{{ $barangs->keterangan }}</td>
             <td>{{ $barangs->deskripsi }}</td>
-            <td>{{ $barangs->id_kategori }}</td>
+            <td>{{ $barangs->kategori->nama_kategori}}</td>
             <td class="text-center">
                 <form action="{{ route('barang.destroy',$barangs->id) }}" method="POST">
   

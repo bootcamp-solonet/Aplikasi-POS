@@ -18,4 +18,10 @@ class Barang extends Model
     ];
     
     protected $table = 'barang';
+
+    public function kategori()
+    {
+        return $this->BelongsTo(Kategori::class,'id_kategori');
+    }
+   
 }
