@@ -46,7 +46,7 @@
                             </li>
                             <li>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>
+                                {{-- <a class="dropdown-item" href="{{ route('logout') }}">Logout</a> --}}
                             </li>
                         </div>
                     </ul>

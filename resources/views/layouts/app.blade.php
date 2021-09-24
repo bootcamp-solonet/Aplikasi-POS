@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="">
-    <title>{{ $title }}</title>
+    {{-- <title>{{ $title }}</title> --}}
 
     <link rel="stylesheet" href="{{ url('atlantis/assets/css/bootstrap.min.css') }}">
     

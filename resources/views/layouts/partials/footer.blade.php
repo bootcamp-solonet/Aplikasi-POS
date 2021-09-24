@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="container-fluid">
         <div class="copyright ml-auto">
-            <a href="#">Dev. SOLONET</a>
+            <a href="#">BOOTCAMP LARAVEL. SOLONET</a>
         </div>				
     </div>
 </footer>
