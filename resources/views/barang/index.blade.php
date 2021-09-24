@@ -60,12 +60,12 @@
             <td class="text-center">
                 <form action="{{ route('barang.destroy',$barangs->id) }}" method="POST">
   
-                    <a class="btn btn-primary btn-sm" href="{{ route('barang.edit',$barangs->id) }}">Edit</a>
+                    <a class="btn btn-outline-warning btn-sm" href="{{ route('barang.edit',$barangs->id) }}"><i class="fas fa-edit"></i> Edit</a>
  
                     @csrf
                     @method('DELETE')
  
-                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Delete</button>
+                    <button type="submit" class="btn btn-outline-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')"><i class="fas fa-trash"></i> Delete</button>
                 </form>
             </td>
         </tr>
