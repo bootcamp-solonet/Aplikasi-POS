@@ -64,8 +64,8 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Keterangan:</strong>
-                <input type="text" name="keterangan" class="form-control" placeholder="Keterangan">
+                <strong>Satuan:</strong>
+                <input type="text" name="satuan" class="form-control" placeholder="Satuan">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -74,17 +74,6 @@
                 <input type="text" name="deskripsi" class="form-control" placeholder="Deskripsi">
             </div>
         </div>
-        {{-- <div class="form-group row">
-            <label for="kpi_golongan" class="col-sm-3 col-form-label required">Golongan</label>
-            <div class="col-lg-9">
-                <select name="kpi_golongan" id="kpi_golongan" class="form-control border-success">
-                    <option value="">- Pilih Golongan -</option>
-                    @foreach ($golongan  as $item)
-                        <option value="{{ $item->nama_golongan }}">{{ $item->nama_golongan }}</option>
-                    @endforeach
-                </select>
-            </div>
-        </div> --}}
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <label for="id_kategori" class="col-sm-3 col-form-label required">Kategori</label>

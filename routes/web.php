@@ -14,7 +14,7 @@ use App\Http\Controllers\BarangController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/barang', function () {
     return view('app');
 });
 

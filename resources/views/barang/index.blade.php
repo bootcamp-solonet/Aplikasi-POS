@@ -45,7 +45,7 @@
         <tr>
             <th>Nama</th>
             <th>Harga</th>
-            <th>Keterangan</th>
+            <th>Satuan</th>
             <th>Deskripsi</th>
             <th>Kategori</th>
             <th width="280px"class="text-center">Aksi</th>
@@ -54,7 +54,7 @@
         <tr>
             <td>{{ $barangs->nama }}</td>
             <td>{{ $barangs->harga }}</td>
-            <td>{{ $barangs->keterangan }}</td>
+            <td>{{ $barangs->satuan }}</td>
             <td>{{ $barangs->deskripsi }}</td>
             <td>{{ $barangs->kategori->nama_kategori}}</td>
             <td class="text-center">

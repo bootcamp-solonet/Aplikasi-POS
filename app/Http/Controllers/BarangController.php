@@ -29,7 +29,7 @@ class BarangController extends Controller
         $request->validate([
             'nama'          => 'required',
             'harga'         => 'required',
-            'keterangan'    => 'required',
+            'satuan'    => 'required',
             'deskripsi'     => 'required',
             'id_kategori'   => 'required',
         ]);
@@ -51,7 +51,7 @@ class BarangController extends Controller
         $request->validate([
             'nama'          => 'required',
             'harga'         => 'required',
-            'keterangan'    => 'required',
+            'satuan'    => 'required',
             'deskripsi'     => 'required',
             'id_kategori'   => 'required',
         ]);

@@ -65,8 +65,8 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Keterangan:</strong>
-                    <input type="text" name="keterangan" value="{{ $barang->keterangan }}" class="form-control" placeholder="Keterangan">
+                    <strong>Satuan:</strong>
+                    <input type="text" name="satuan" value="{{ $barang->satuan }}" class="form-control" placeholder="Satuan">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
